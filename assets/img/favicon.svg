@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dark Background -->
+  <rect width="512" height="512" rx="110" fill="#1a1a1a"/>
+  
+  <!-- 'S' Monogram -->
+  <text x="256" y="276" 
+        font-family="'Space Grotesk', Inter, sans-serif" 
+        font-size="340" 
+        font-weight="700" 
+        fill="#ffffff" 
+        text-anchor="middle" 
+        dominant-baseline="central">S</text>
+        
+  <!-- Vibrant Accent Dot -->
+  <circle cx="390" cy="390" r="45" fill="#42A5F5"/>
+</svg>
