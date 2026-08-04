@@ -88,3 +88,41 @@ document.querySelectorAll('.nav-links a').forEach((link) => {
     link.classList.add('active');
   }
 });
+
+const handleMouseMove = (e) => {
+  const target = e.currentTarget;
+  const rect = target.getBoundingClientRect();
+
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  target.style.setProperty("--mouse-x", `${x}px`);
+  target.style.setProperty("--mouse-y", `${y}px`);
+};
+
+const interactiveCards = document.querySelectorAll(".service-card, .project-card");
+
+if (!prefersReducedMotion) {
+  for (const card of interactiveCards) {
+    card.addEventListener("mousemove", handleMouseMove);
+  }
+}
+
+// ---------- Page Transitions ----------
+const transitionLinks = document.querySelectorAll('a[href$=".html"]');
+
+if (!prefersReducedMotion) {
+  transitionLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const targetUrl = link.getAttribute('href');
+
+      document.body.classList.add('fade-out');
+
+      setTimeout(() => {
+        window.location.href = targetUrl;
+      }, 400);
+    });
+  });
+}

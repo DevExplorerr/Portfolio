@@ -59,6 +59,12 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
   overflow-wrap: break-word;
+  opacity: 0; 
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+body.fade-out {
+  animation: fadeOut 0.4s ease-in forwards;
 }
 
 a {
@@ -309,12 +315,15 @@ section {
   background: var(--accent-bright);
   color: var(--bg);
   border-color: var(--accent-bright);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.15);
 }
 
 .btn-primary:hover {
   background: transparent;
   color: var(--accent-bright);
   transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.4);
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.3);
 }
 
 .btn-outline {
@@ -485,6 +494,13 @@ section {
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
+.service-card, .project-card, .looking-for-box {
+  background: linear-gradient(145deg, rgba(16, 25, 46, 0.9), rgba(20, 33, 64, 0.5));
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
 .service-card:hover {
   border-color: var(--border-strong);
   transform: translateY(-3px);
@@ -515,6 +531,35 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 8px;
+}
+
+.service-card:hover, .project-card:hover {
+  box-shadow: 0 10px 30px -10px rgba(34, 211, 238, 0.15);
+}
+
+.service-card::before, .project-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 0) var(--mouse-y, 0),
+    rgba(34, 211, 238, 0.08),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.service-card:hover::before, .project-card:hover::before {
+  opacity: 1;
+}
+
+.service-card *, .project-card * {
+  position: relative;
+  z-index: 1;
 }
 
 /* =========================================================
@@ -1014,6 +1059,28 @@ footer {
   50% { opacity: 0; }
 }
 
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(15px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes fadeOut {
+  from { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+  to { 
+    opacity: 0; 
+    transform: translateY(-15px); 
+  }
+}
+
 /* =========================================================
    Page-level responsive tweaks
    ========================================================= */
@@ -1023,4 +1090,14 @@ footer {
   .hero { min-height: auto; padding: 120px 0 60px; }
   .btn-row { flex-direction: column; }
   .btn { justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    opacity: 1;
+    animation: none;
+  }
+  body.fade-out {
+    animation: none;
+  }
 }
