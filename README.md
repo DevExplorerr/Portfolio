@@ -5,7 +5,6 @@
 ## ⚡ Features
 *   **Dark-Mode First Design:** A minimalist, technical visual identity utilizing Space Grotesk and IBM Plex Mono typography.
 *   **Project Showcases:** High-fidelity multi-screen device mockups detailing engineering decisions, tech stacks, and architecture for six major projects.
-*   **Direct App Downloads:** Hosted APK downloads for select production-ready applications (Drips Water, Task Flow).
 *   **Fully Responsive:** Fluid layouts built with modern CSS Flexbox/Grid that scale perfectly from desktop down to mobile.
 *   **Integrated Contact:** Working contact form configured via Web3Forms, alongside vector social links.
 
