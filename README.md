@@ -1,9 +1,11 @@
 # Muhammad Saad Jamal - Personal Portfolio
 
-> A clean, responsive, and technical personal portfolio website showcasing production-grade Flutter applications, clean architecture projects, and mobile development case studies.
+> A clean, responsive, and technical personal portfolio website showcasing production-grade Flutter applications, clean architecture projects, offered professional services, and mobile development case studies.
 
 ## ⚡ Features
 *   **Dark-Mode First Design:** A minimalist, technical visual identity utilizing Space Grotesk and IBM Plex Mono typography.
+*   **Comprehensive Services Overview:** A dedicated `services.html` page and homepage section outlining offerings (like mobile app development, backend architecture, and MVP builds), featuring custom CSS-styled service cards and process steps.
+*   **Seamless Navigation:** Unified, globally updated navigation links across all pages (`index.html`, `about.html`, `services.html`, `projects.html`, and `contact.html`) for a smooth user experience.
 *   **Project Showcases:** High-fidelity multi-screen device mockups detailing engineering decisions, tech stacks, and architecture for six major projects.
 *   **Fully Responsive:** Fluid layouts built with modern CSS Flexbox/Grid that scale perfectly from desktop down to mobile.
 *   **Integrated Contact:** Working contact form configured via Web3Forms, alongside vector social links.
@@ -19,7 +21,7 @@ This portfolio highlights comprehensive case studies for the following applicati
 
 ## 💻 Tech Stack
 *   **HTML5:** Semantic HTML structuring for optimal accessibility and SEO.
-*   **CSS3:** Custom CSS variables for theme management, responsive media queries, and smooth transitions.
+*   **CSS3:** Custom CSS variables for theme management, responsive media queries, interactive card styling, and smooth transitions.
 *   **JavaScript:** Lightweight vanilla JS for mobile navigation toggling and interactive UI elements.
 *   **Web3Forms:** Serverless form submission handling.
 
