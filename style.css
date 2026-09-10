@@ -17,6 +17,9 @@
   --border-strong: rgba(34, 211, 238, 0.4);
   --danger: #FF6B6B;
   --success: #34D399;
+  --gold: #F5C044;
+  --gold-dim: rgba(245, 192, 68, 0.1);
+  --gold-border: rgba(245, 192, 68, 0.32);
 
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -700,6 +703,20 @@ section {
   position: absolute;
   left: 0;
   color: var(--accent-bright);
+}
+
+.project-card .award-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--gold);
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-top: 18px;
 }
 
 .project-card .project-links {
