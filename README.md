@@ -26,7 +26,7 @@ This portfolio highlights comprehensive case studies for the following applicati
 *   **Web3Forms:** Serverless form submission handling.
 
 ## 📬 Connect
-Email: saadj4775@gmail.com
+Email: hello@saadjamal.dev
 
 LinkedIn: [in/muhammadsaadjamal](https://www.linkedin.com/in/muhammadsaadjamal/)
 
