@@ -1,0 +1,28 @@
+# Muhammad Saad Jamal
+
+> Flutter developer building cross-platform mobile apps with Clean Architecture, Firebase and AI integrations. This is his portfolio site, with project case studies, services, and downloadable Android APKs.
+
+Muhammad Saad Jamal is a Flutter developer and student with internship and freelance/contract experience. His projects span logistics, healthcare, e-commerce and productivity. Contact: hello@saadjamal.dev
+
+## Pages
+
+- [Home](https://saadjamal.dev/): Overview of who he is and what he builds
+- [About](https://saadjamal.dev/about.html): Background and experience
+- [Services](https://saadjamal.dev/services.html): Flutter development services
+- [Projects](https://saadjamal.dev/projects.html): Seven Flutter projects with tech stacks, engineering notes, source code and APK downloads
+- [Contact](https://saadjamal.dev/contact.html): How to get in touch
+
+## Projects
+
+- [Doctor Hunt](https://saadjamal.dev/projects.html#doctor-hunt): AI-powered healthcare platform with doctor discovery, transaction-safe appointment booking, AI symptom triage, English/Urdu voice interaction and medical document analysis. Flutter, Firebase, GetX, Node.js, Qwen AI.
+- [Drips Water](https://saadjamal.dev/projects.html#drips-water): Water delivery and logistics platform with a role-based admin dashboard and a Dialogflow AI chatbot. Flutter, Firebase, Dialogflow, Provider, Clean Architecture.
+- [Task Flow](https://saadjamal.dev/projects.html#task-flow): Real-time productivity app with cloud sync, reminders and notifications. Flutter, Firebase Auth, Firestore, Provider.
+- [Eventify](https://saadjamal.dev/projects.html#eventify): Event registration app with QR-code tickets and Hive-based bookmarking. Flutter, Firebase, Hive, Provider.
+- [Glitz Mart](https://saadjamal.dev/projects.html#e-commerce): E-commerce app with REST API integration, category navigation and cart management. Flutter, GetX, Firebase.
+- [Grade Wise](https://saadjamal.dev/projects.html#grade-wise): Offline-first GPA/CGPA calculator with semester management. Flutter, GetX, GetStorage.
+- [Cookify](https://saadjamal.dev/projects.html#cookify): Recipe browsing app with search, favorites and step-by-step instructions (local demo). Flutter, Provider.
+
+## Elsewhere
+
+- [GitHub](https://github.com/DevExplorerr): Source code for his projects
+- [LinkedIn](https://linkedin.com/in/muhammadsaadjamal): Professional profile
