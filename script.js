@@ -82,7 +82,7 @@ if (prefersReducedMotion) {
 }
 
 // ---------- Active nav link ----------
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const currentPage = window.location.pathname.replace(/\/$/, '') || '/';
 document.querySelectorAll('.nav-links a').forEach((link) => {
   if (link.getAttribute('href') === currentPage) {
     link.classList.add('active');
@@ -109,7 +109,7 @@ if (!prefersReducedMotion) {
 }
 
 // ---------- Page Transitions ----------
-const transitionLinks = document.querySelectorAll('a[href$=".html"]');
+const transitionLinks = document.querySelectorAll('a[href^="/"]');
 
 if (!prefersReducedMotion) {
   transitionLinks.forEach(link => {
