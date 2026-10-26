@@ -114,12 +114,15 @@ const transitionLinks = document.querySelectorAll('a[href^="/"]');
 if (!prefersReducedMotion) {
   transitionLinks.forEach(link => {
     link.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      if (link.target === '_blank') return;
+
+      const url = new URL(link.href, window.location.origin);
+      if (url.pathname === window.location.pathname) return;
+
       e.preventDefault();
-
       const targetUrl = link.getAttribute('href');
-
       document.body.classList.add('fade-out');
-
       setTimeout(() => {
         window.location.href = targetUrl;
       }, 400);
