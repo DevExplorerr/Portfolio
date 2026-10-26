@@ -126,3 +126,9 @@ if (!prefersReducedMotion) {
     });
   });
 }
+
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    document.body.classList.remove('fade-out');
+  }
+});
