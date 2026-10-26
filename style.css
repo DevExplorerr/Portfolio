@@ -12,7 +12,7 @@
   --accent-bright-dim: rgba(34, 211, 238, 0.14);
   --text-primary: #e8ecf3;
   --text-secondary: #8b96a8;
-  --text-muted: #5b6479;
+  --text-muted: #7D879C;
   --border: rgba(34, 211, 238, 0.14);
   --border-strong: rgba(34, 211, 238, 0.4);
   --danger: #ff6b6b;
@@ -398,7 +398,7 @@ section {
   margin: 0 auto;
   padding: 0 28px;
   opacity: 0;
-  animation: fadeUp 0.9s ease forwards;
+  animation: fadeUp 0.4s ease forwards;
 }
 
 .hero h1 {
